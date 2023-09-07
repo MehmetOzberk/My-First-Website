@@ -167,7 +167,7 @@ nav{
     transition-delay: 0 ;
 }
 
-
+/*header style ends */
 .sticky{
     bottom: 1rem;
     align-self: flex-end;
@@ -193,6 +193,7 @@ nav{
 .scrollup:hover{
     box-shadow: 2px 2px 10px -1px inset  #000000;
 }
+/* Footer style */
 .footer{
     padding-left: 2rem;
     padding-right: 3rem;
