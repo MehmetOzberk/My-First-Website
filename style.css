@@ -18,6 +18,9 @@ img{
 
 
 /* Nav Style*/
+.menuphone{
+    display: none;
+}
 nav{
     max-width: 100%;
     margin: auto;
@@ -34,10 +37,12 @@ nav{
 .nav-links{
     list-style: none;
     display: flex;
+  
     align-items: center;
     gap: 3rem;
 
 }
+
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
@@ -63,11 +68,11 @@ nav{
     padding: 1rem 1rem;
     font-size: 1rem;
     background-color:#053f71 ;
-   border-radius: 2rem; 
-   cursor: pointer;
-   box-shadow: 3px 3px 7px -1px  #000000;
-   border: solid 1px black;
-   transition: 0.7s ease;
+    border-radius: 2rem; 
+    cursor: pointer;
+    box-shadow: 3px 3px 7px -1px  #000000;
+    border: solid 1px black;
+    transition: 0.7s ease;
     color: #fff;
 }
 .btn:hover{
@@ -89,12 +94,14 @@ nav{
     margin-left: -0.625rem;
     padding-left: 0.438rem;
     background-color: #3393bd;
-    border-top: 0.188rem solid white;
+    border-top: 0.188rem solid white; 
+     z-index: 100;
    
 }
 #sekme:hover ul {
     max-height: 100%;
     padding-bottom: 0.5rem ;
+  
 }
 #sekme ul li{
     
@@ -143,6 +150,11 @@ nav{
     padding-right: 10rem;
     padding-top: 3rem ;
 }
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
 .icibos{
     -webkit-text-fill-color: transparent;
     transition: all 1s ease;
@@ -167,7 +179,7 @@ nav{
     transition-delay: 0 ;
 }
 
-/*header style ends */
+
 .sticky{
     bottom: 1rem;
     align-self: flex-end;
@@ -193,7 +205,6 @@ nav{
 .scrollup:hover{
     box-shadow: 2px 2px 10px -1px inset  #000000;
 }
-/* Footer style */
 .footer{
     padding-left: 2rem;
     padding-right: 3rem;
@@ -209,13 +220,15 @@ padding-top: 1.5rem;
     height: 5rem;
 }
 #brand{
-    margin-left: 30rem;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: baseline;
+    margin-left: 23rem;
+    margin-top: 1.5rem;
     margin-bottom: -1rem;
     font: size 2rem; ;
     gap: -2rem;
+    padding-bottom: 0.5rem;
 }
 #brand h1 span{
-    padding-top: 15rem;
  font-size:10px ;   
 }
