@@ -1,4 +1,4 @@
-/* dark mode*/
+ /* dark mode*/
 
 document.addEventListener("DOMContentLoaded", function () {
 // Check if the theme preference is already saved in local storage
@@ -83,9 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
+        } 
     });
 }, 
 {
@@ -97,10 +95,13 @@ const targetElement = document.querySelector('.hidden');
 if (targetElement) {
     observer.observe(targetElement);
 }
+ const menubtn = document.getElementsByClassName('menu-btn')[0]
+  const navlinks = document.getElementsByClassName('nav-links')[0]
 
+menubtn.addEventListener('click', () =>{
+ navlinks.classList.toggle('aktif')
+}
+);
 });
 
-   
-   
-
-
+ 

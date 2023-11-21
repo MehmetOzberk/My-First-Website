@@ -7,47 +7,61 @@
     <script src="https://kit.fontawesome.com/1c7a4474a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="ikon.png">
 </head>
-<body >
+<body>
     <div id="top" ></div>
     <!-- Nav Start -->
   
-        <nav>
+        <nav class="navcontainer">
+            <h1 id="yontek" style="color: #ffffff;">YÖNTEK</h1>       
             <div id="nav" class="navlogo">   
                 <a href="Anasayfa.html">
-                    <img src="logo.jpg" alt="">
+                    <img id="logo" src="logo.jpg" alt="">
                 </a>
             </div> 
-            <ul class="nav-links">
-                <li class="link"><a href="Anasayfa.html">Ana Sayfa</a></li>
-                <li class="link" id="sekme">     
-                    <span class="active" style="color: lightgray;font-size: 18px;">Ekiplerimiz<i class="ri-arrow-down-s-line"></i></span>        
-                    <ul id="dropdown">
-                        <li style="list-style: none;" ><a href="IE.Html">İnovasyon <br> Ekibi</a></li>
-                        <li style="list-style: none;" ><a href="BE.html">Bilim <br> Ekibi</a></li>
-                        <li style="list-style: none;" ><a href="TE.html">Tasarım <br> Ekibi</a></li>
-                        <li style="list-style: none;" ><a href="AE.html">Ar-Ge <br>Ekibi</a></li>
-                        <li style="list-style: none;" ><span class="active" style="color: lightgray;">Sosyal Sorumluluk <br>Ekibi</span></li>
-                        <li style="list-style: none;" ><a href="DP.html">Dijital Pazarlama  <br>Ekibi</a></li>
-                    </ul></li>
-                <li class="link" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSd2S0cnwcLsbW8h4DkWXeFyq2Q59RKxFG2gGykKlcxV4B8eLA/viewform" target="_blank">Coding Camp</a></li>    
-                <li class="link"><a href="https://yontek.blogspot.com/" target="_blank">Blog</li>
-            </ul> 
-                
-            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdkIBZdty0ccogatUVhPpBVoU8fdOPH3ClCjQGOuBYDrXAV7Q/viewform" target="_blank" >Aramıza Katılmak İster Misin?</a>
             <label>  
                 <input name="theme-toggle" id="theme-toggle" type="checkbox" value="active" style="display: none;" autocomplete="on"> 
-                <div>
+                <div class="tema-btn">
                     <i class="ri-sun-fill"></i>
-                    <i id="fa-moon" class="fa-solid fa-moon" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
                 </div>
-            </label>
+            </label>   
+            <div  class="nav-links" id="nav-links">
+                <ul>
+                    <li class="link"><a href="Anasayfa.html" style="color: #ffffff;" >Ana Sayfa</a></li>
+                    <li class="tlink" id="sekme">     
+                        <a  style="color: lightgray;font-size: 19.2px;"><nobr>Ekiplerimiz  <i class="fa-solid fa-caret-down fa-xs" style="color: #ffffff;"></i>  </nobr></an>        
+                        <ul id="dropdown">
+                            <li style="list-style: none;" ><a href="IE.Html">İnovasyon <br> Ekibi</a></li>
+                            <li style="list-style: none;" ><a href="BE.html">Bilim <br> Ekibi</a></li>
+                            <li style="list-style: none;" ><a href="TE.html">Tasarım <br> Ekibi</a></li>
+                            <li style="list-style: none;" ><a href="AE.html">Ar-Ge <br>Ekibi</a></li>
+                            <li style="list-style: none;" ><a class="active" style="color: lightgray;" >Sosyal Sorumluluk <br>Ekibi</a></li>
+                            <li style="list-style: none;" ><a href="DP.html">Dijital Pazarlama  <br>Ekibi</a></li>
+                        </ul></li>
+                    <li class="link" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSd2S0cnwcLsbW8h4DkWXeFyq2Q59RKxFG2gGykKlcxV4B8eLA/viewform" target="_blank">Coding Camp</a></li>    
+                    <li class="link link-blog"><a href="https://yontek.blogspot.com/" target="_blank">Blog</li>
+                <li >  <a id="join1" class="btn btn-join" href="https://docs.google.com/forms/d/e/1FAIpQLSdkIBZdty0ccogatUVhPpBVoU8fdOPH3ClCjQGOuBYDrXAV7Q/viewform" target="_blank" >Aramıza&nbsp;Katılmak&nbsp;İster&nbsp;Misin?</a></li>
+                <li class="link"><a id="join2"  href="https://docs.google.com/forms/d/e/1FAIpQLSdkIBZdty0ccogatUVhPpBVoU8fdOPH3ClCjQGOuBYDrXAV7Q/viewform" target="_blank" >Aramıza&nbsp;Katılmak&nbsp;İster&nbsp;Misin?</a></li>    
+
+            </ul> 
+            </div> 
+            <a  class="menu-btn">
+                <i class="fa-solid fa-bars fa-2xl " style="color: #ffffff;"></i>
+            </a>
+                   
         </nav>
         <!-- Nav End -->
 
         <!-- Header Start -->
-        <div class="header">   
-            <img src="car.jpg" class="foto">
+        <div class="header">
+            <div class="foto-container">
+                <img src="car.jpg" class="foto">
+            </div>   
+            
+            <span class="blur"></span>
+            <span class="blur"></span>
             <div  class="hidden" >
                 
                 <h1 class="yazi"  style="display: inline;">YÖN</h1>
@@ -60,26 +74,25 @@
                     geliştirmesi için fırsat yaratılması ayrıca farklı bölümler hakkında bilgi sahibi olmasını sağlamak da hedeflerimiz arasındadır.     
                 </p> 
             </div>
+            <div class="takvimlink"><a href="https://calendar.google.com/calendar/u/2?cid=aWd1eW9udGVrQGdtYWlsLmNvbQ" target="_blank" style="color: #ffffff;">&nbsp;Takvimimiz</a></div>
 
+            <div class="takvim">
+                <iframe src="https://calendar.google.com/calendar/embed?height=700&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FIstanbul&showDate=1&showNav=0&showPrint=0&showTabs=0&showCalendars=0&title=Gelecekteki%20Etkinliklerimiz&src=aWd1eW9udGVrQGdtYWlsLmNvbQ&color=%23039BE5"  width="%80" height="700" frameborder="0" scrolling="no"></iframe>
+            </div>
         </div>
-        <div class="sticky"> <a href="#top" class="scrollup" ><img class="ikon" src="indir-removebg-preview.png"></a></div>
+        <div class="sticky"><div class="right"> <a href="#top" class="scrollup" ><img class="ikon" src="indir-removebg-preview.png"></a></div></div>
         <!-- Footer Start-->
         <div class="footer">    
             <a style="color: #ffffff;" target="_blank"  href="https://www.instagram.com/1yontek/"><i class="fa-brands fa-instagram fa-xl"></i> İnstagram Sayfamız</a>  
             <a style="color: #ffffff;" target="_blank"  href="https://www.youtube.com/@1yontek/featured"><i class="fa-brands fa-youtube fa-lg"></i>Youtube Kanalımız </a>  
             <a style="color: #ffffff;" target="_blank" href="https://www.linkedin.com/company/y%C3%B6ntek-toplulu%C4%9Fu/"><i class="fa-brands fa-linkedin fa-lg"></i> Linkedin Hesabımız </a>  
-            <a style="color: #ffffff;" ><i class="fa-regular fa-envelope fa-lg"></i>iguyontek@gmail.com</a>  
+            <a  style="color: #ffffff;"   ><i class="fa-regular fa-envelope fa-lg"></i>iguyontek@gmail.com</a>  
             
             <div id="brand"><h1 style="color: #ffffff;" >YÖNTEK <br><span>Yöntek daha iyisini yapar.</span></h1></div>
             
-
-
-
-
-
-
         </div>
-        <div style="background-color: black;">
-        <a style="color: white;display: flex;align-items: end; justify-content: center;">@2023 Tüm Hakları Saklıdır.</a>
-        </div>
+    <div class="ending" style="background-color: black;">
+        <a style="color: white;display:flex;align-items: end; justify-content: center;">@2023 Tüm Hakları Saklıdır.</a>
+    </div>
+
 </body>
